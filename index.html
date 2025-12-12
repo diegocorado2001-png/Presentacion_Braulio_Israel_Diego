@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Desktop - Final</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="google-aurora">
+        <div class="blob blue"></div>
+        <div class="blob red"></div>
+        <div class="blob yellow"></div>
+        <div class="blob green"></div>
+    </div>
+
+    
+
+    <section id="inicio" class="slide hero-slide">
+        <div class="hero-content">
+            <div class="google-logo-big">
+                <span class="c-blue">G</span><span class="c-red">o</span><span class="c-yellow">o</span><span class="c-blue">g</span><span class="c-green">l</span><span class="c-red">e</span>
+            </div>
+            <h1>App for Windows </h1>
+            <p class="subtitle">La nueva capa de búsqueda universal</p>
+            
+            <a href="#concepto" class="touch-btn">
+                <span>COMENZAR ANÁLISIS</span>
+                <i class="material-icons">touch_app</i>
+            </a>
+
+            <div class="authors-row">
+                <div class="author-card" onclick="toggleAuthor(this)">
+                    <div class="author-header">
+                        <i class="far fa-user-circle"></i> Braulio Guitiérrez
+                    </div>
+                    <div class="author-reveal">
+                        <img src="braulio.jpg" alt="Braulio">
+                    </div>
+                </div>
+
+                <div class="author-card" onclick="toggleAuthor(this)">
+                    <div class="author-header">
+                        <i class="far fa-user-circle"></i> Israel De Paz
+                    </div>
+                    <div class="author-reveal">
+                        <img src="israel.jpg" alt="Israel">
+                    </div>
+                </div>
+
+                <div class="author-card" onclick="toggleAuthor(this)">
+                    <div class="author-header">
+                        <i class="far fa-user-circle"></i> Diego Corado
+                    </div>
+                    <div class="author-reveal">
+                        <img src="diego.jpg" alt="Diego">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="concepto" class="slide">
+        <h2 class="slide-title">¿Qué es?</h2>
+       
+        
+        <div class="cards-container">
+            <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><i class="material-icons">layers</i><h3>Definición</h3></div>
+                    <div class="flip-card-back"><p>App nativa flotante. Una capa de inteligencia sobre Windows.</p></div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><i class="material-icons">published_with_changes</i><h3>Paradigma</h3></div>
+                    <div class="flip-card-back"><p>Google se integra en el núcleo del Sistema Operativo.</p></div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><i class="material-icons">science</i><h3>Estado</h3></div>
+                    <div class="flip-card-back"><p>Experimental (Labs). Limitado pero escalable.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="omnibarra" class="slide">
+        <h2 class="slide-title">La Omnibarra</h2>
+        <div class="interactive-split">
+            <div class="touch-menu">
+                <div class="touch-item active" onclick="activateFeature(1)">
+                    <i class="fas fa-keyboard"></i>
+                    <div><strong>Atajo</strong><p>ALT + ESPACIO</p></div>
+                </div>
+                <div class="touch-item" onclick="activateFeature(2)">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <div><strong>Velocidad</strong><p>Sin navegador</p></div>
+                </div>
+                <div class="touch-item" onclick="activateFeature(3)">
+                    <i class="fas fa-camera"></i>
+                    <div><strong>Lens</strong><p>Captura visual</p></div>
+                </div>
+            </div>
+            <div class="visual-panel">
+                <div id="feat-1" class="feat-content active">
+                    <div class="key-combo"><span class="key">Alt</span> + <span class="key">Space</span></div>
+                    <p class="big-desc">Activación instantánea.</p>
+                </div>
+                <div id="feat-2" class="feat-content">
+                    <div class="speed-meter"><i class="fas fa-bolt"></i></div>
+                    <p class="big-desc">Ligero. No consume RAM.</p>
+                </div>
+                <div id="feat-3" class="feat-content">
+                    <div class="lens-icon"><i class="fas fa-camera-retro"></i></div>
+                    <p class="big-desc">IA Visual en pantalla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hibrido" class="slide">
+        <h2 class="slide-title">Híbrido</h2>
+       
+        <div class="hybrid-container">
+            <div class="h-panel local" onclick="expandPanel(this)">
+                <i class="fas fa-laptop"></i><h3>LOCAL</h3><p class="hidden-details">Archivos y Apps.</p>
+            </div>
+            <div class="h-panel web" onclick="expandPanel(this)">
+                <i class="fab fa-google"></i><h3>WEB</h3><p class="hidden-details">Búsqueda + IA.</p>
+            </div>
+            <div class="h-panel cloud" onclick="expandPanel(this)">
+                <i class="fab fa-google-drive"></i><h3>NUBE</h3><p class="hidden-details">Drive y Docs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusion" class="slide">
+        <h2 class="slide-title">Veredicto</h2>
+        <div class="verdict-grid">
+            <div class="v-card big-pro" onclick="revealNextItem('pros-list')">
+                <div class="v-header"><i class="fas fa-thumbs-up"></i> PROS <small>(Toca)</small></div>
+                <ul id="pros-list" class="progressive-list">
+                    <li class="hidden-item">Productividad extrema.</li>
+                    <li class="hidden-item">Unificación PC + Nube.</li>
+                    <li class="hidden-item">Interfaz familiar.</li>
+                </ul>
+            </div>
+            <div class="v-card big-con" onclick="revealNextItem('cons-list')">
+                <div class="v-header"><i class="fas fa-thumbs-down"></i> CONTRAS <small>(Toca)</small></div>
+                <ul id="cons-list" class="progressive-list">
+                    <li class="hidden-item">Privacidad (Indexado).</li>
+                    <li class="hidden-item">Requiere Internet.</li>
+                    <li class="hidden-item">Bloqueo regional.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="final-badge">Recomendado para Workspace</div>
+    </section>
+
+  <section id="final" class="slide final-slide">
+        <div class="final-container">
+            <button id="boom-btn" class="boom-button" onclick="goBoom()">
+                <i class="fas fa-check-circle"></i> FINALIZAR
+            </button>
+
+            <div id="thank-you-msg" class="hidden-msg">
+                <h1 class="giant-text">¡GRACIAS COMPAÑEROS POR SU ATENCION!</h1>
+             
+            </div>
+        </div>
+        <audio id="applause-sound" src="https://actions.google.com/sounds/v1/crowds/applause.ogg"></audio>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
