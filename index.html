@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="google-aurora">
@@ -17,47 +19,33 @@
         <div class="blob green"></div>
     </div>
 
-    
+    <nav>
+        <div class="logo"><i class="fab fa-google"></i> Desktop App</div>
+        <div class="nav-hint">Edición Táctil <i class="fas fa-hand-pointer"></i></div>
+    </nav>
 
     <section id="inicio" class="slide hero-slide">
         <div class="hero-content">
             <div class="google-logo-big">
-                <span class="c-blue">G</span><span class="c-red">o</span><span class="c-yellow">o</span><span class="c-blue">g</span><span class="c-green">l</span><span class="c-red">e</span>
+                <span class="c-blue">G</span><span class="c-red">o</span><span class="c-yellow">o</span><span
+                    class="c-blue">g</span><span class="c-green">l</span><span class="c-red">e</span>
             </div>
-            <h1>App for Windows </h1>
+            <h1>Windows Edition</h1>
             <p class="subtitle">La nueva capa de búsqueda universal</p>
-            
-            <a href="#concepto" class="touch-btn">
-                <span>COMENZAR ANÁLISIS</span>
-                <i class="material-icons">touch_app</i>
-            </a>
+            <a href="#concepto" class="touch-btn"><span>COMENZAR</span><i class="material-icons">arrow_downward</i></a>
 
             <div class="authors-row">
                 <div class="author-card" onclick="toggleAuthor(this)">
-                    <div class="author-header">
-                        <i class="far fa-user-circle"></i> Braulio Guitiérrez
-                    </div>
-                    <div class="author-reveal">
-                        <img src="braulio.jpg" alt="Braulio">
-                    </div>
+                    <div class="author-header"><i class="far fa-user-circle"></i> Braulio Gutierrez</div>
+                    <div class="author-reveal"><img src="braulio.jpg" alt="Braulio"></div>
                 </div>
-
                 <div class="author-card" onclick="toggleAuthor(this)">
-                    <div class="author-header">
-                        <i class="far fa-user-circle"></i> Israel De Paz
-                    </div>
-                    <div class="author-reveal">
-                        <img src="israel.jpg" alt="Israel">
-                    </div>
+                    <div class="author-header"><i class="far fa-user-circle"></i> Israel De Paz</div>
+                    <div class="author-reveal"><img src="israel.jpg" alt="Israel"></div>
                 </div>
-
                 <div class="author-card" onclick="toggleAuthor(this)">
-                    <div class="author-header">
-                        <i class="far fa-user-circle"></i> Diego Corado
-                    </div>
-                    <div class="author-reveal">
-                        <img src="diego.jpg" alt="Diego">
-                    </div>
+                    <div class="author-header"><i class="far fa-user-circle"></i> Diego Corado</div>
+                    <div class="author-reveal"><img src="diego.jpg" alt="Diego"></div>
                 </div>
             </div>
         </div>
@@ -65,25 +53,39 @@
 
     <section id="concepto" class="slide">
         <h2 class="slide-title">¿Qué es?</h2>
-       
-        
+        <p class="instruction-text">Toca las tarjetas</p>
         <div class="cards-container">
             <div class="flip-card" onclick="flipCard(this)">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front"><i class="material-icons">layers</i><h3>Definición</h3></div>
-                    <div class="flip-card-back"><p>Es una aplicación nativa de Google para Windows que actúa como una capa de búsqueda universal.</p></div>
+                    <div class="flip-card-front"><i class="material-icons">layers</i>
+                        <h3>Definición</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Es una aplicación nativa de Google para Windows que actúa como una capa de búsqueda
+                            universal.</p>
+                    </div>
                 </div>
             </div>
             <div class="flip-card" onclick="flipCard(this)">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front"><i class="material-icons">published_with_changes</i><h3>Paradigma</h3></div>
-                    <div class="flip-card-back"><p>Google deja de ser solo una página web en tu navegador para convertirse en una herramienta integrada en el sistema operativo</p></div>
+                    <div class="flip-card-front"><i class="material-icons">published_with_changes</i>
+                        <h3>Paradigma</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Google deja de ser solo una página web en tu navegador para convertirse en una herramienta
+                            integrada en el sistema operativo.</p>
+                    </div>
                 </div>
             </div>
             <div class="flip-card" onclick="flipCard(this)">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front"><i class="material-icons">science</i><h3>Estado</h3></div>
-                    <div class="flip-card-back"><p>Estado Actual Fase "Experimental/Beta" (Google Labs). Actualmente limitada a usuarios en EE.UU., pero escalable globalmente.</p></div>
+                    <div class="flip-card-front"><i class="material-icons">science</i>
+                        <h3>Estado</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Fase "Experimental/Beta" (GoogleLabs). Actualmente limitada a usuarios en EE.UU., pero
+                            escalable globalmente.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,15 +97,21 @@
             <div class="touch-menu">
                 <div class="touch-item active" onclick="activateFeature(1)">
                     <i class="fas fa-keyboard"></i>
-                    <div><strong>Atajo</strong><p>ALT + ESPACIO</p></div>
+                    <div><strong>Atajo</strong>
+                        <p>ALT + ESPACIO</p>
+                    </div>
                 </div>
                 <div class="touch-item" onclick="activateFeature(2)">
                     <i class="fas fa-tachometer-alt"></i>
-                    <div><strong>Velocidad</strong><p>Sin navegador</p></div>
+                    <div><strong>Velocidad</strong>
+                        <p>Sin navegador</p>
+                    </div>
                 </div>
                 <div class="touch-item" onclick="activateFeature(3)">
                     <i class="fas fa-camera"></i>
-                    <div><strong>Lens</strong><p>Captura visual</p></div>
+                    <div><strong>Lens</strong>
+                        <p>Captura visual</p>
+                    </div>
                 </div>
             </div>
             <div class="visual-panel">
@@ -125,58 +133,91 @@
 
     <section id="hibrido" class="slide">
         <h2 class="slide-title">Híbrido</h2>
-       
         <div class="hybrid-container">
             <div class="h-panel local" onclick="expandPanel(this)">
-                <i class="fas fa-laptop"></i><h3>LOCAL</h3><p class="hidden-details">Encuentra archivos, documentos y programas instalados (ej. buscar "OBS" o "Excel").</p>
+                <i class="fas fa-laptop"></i>
+                <h3>LOCAL</h3>
+                <p class="hidden-details">Encuentra archivos, documentos y programas instalados (ej. buscar "OBS" o
+                    "Excel").</p>
             </div>
             <div class="h-panel web" onclick="expandPanel(this)">
-                <i class="fab fa-google"></i><h3>WEB</h3><p class="hidden-details">Realiza búsquedas tradicionales de Google con integración de IA.</p>
+                <i class="fab fa-google"></i>
+                <h3>WEB</h3>
+                <p class="hidden-details">Realiza búsquedas tradicionales de Google con integración de IA.</p>
             </div>
             <div class="h-panel cloud" onclick="expandPanel(this)">
-                <i class="fab fa-google-drive"></i><h3>NUBE</h3><p class="hidden-details">Busca directamente en Google Drive.</p>
+                <i class="fab fa-google-drive"></i>
+                <h3>NUBE</h3>
+                <p class="hidden-details">Busca directamente en Google Drive.</p>
             </div>
         </div>
     </section>
 
-<section id="conclusion" class="slide">
-    <h2 class="slide-title">Veredicto Final</h2>
-    <div class="verdict-grid">
-        <div class="v-card big-pro" onclick="revealNextItem('pros-list')">
-            <div class="v-header">
-                <i class="fas fa-thumbs-up"></i> PROS
-                </div>
-            <ul id="pros-list" class="progressive-list">
-                <li class="hidden-item">Productividad extrema.</li>
-                <li class="hidden-item">Unificación PC + Nube.</li>
-                <li class="hidden-item">Interfaz familiar.</li>
-            </ul>
+    <section id="pros-contras" class="slide">
+        <h2 class="slide-title">Análisis Estratégico</h2>
+        <p class="instruction-text">Toca los cuadros para ver detalles</p>
+        <div class="verdict-grid">
+            <div class="v-card big-pro" onclick="revealNextItem('pros-list')">
+                <div class="v-header"><i class="fas fa-thumbs-up"></i> VENTAJAS</div>
+                <ul id="pros-list" class="progressive-list">
+                    <li class="hidden-item"><strong>Velocidad:</strong> Indexación Google vs Windows.</li>
+                    <li class="hidden-item"><strong>Productividad:</strong> Todo en una barra.</li>
+                    <li class="hidden-item"><strong>Familiaridad:</strong> Interfaz móvil conocida.</li>
+                </ul>
+            </div>
+            <div class="v-card big-con" onclick="revealNextItem('cons-list')">
+                <div class="v-header"><i class="fas fa-thumbs-down"></i> RETOS</div>
+                <ul id="cons-list" class="progressive-list">
+                    <li class="hidden-item"><strong>Privacidad:</strong> Acceso a archivos locales.</li>
+                    <li class="hidden-item"><strong>Dependencia:</strong> Login obligatorio.</li>
+                    <li class="hidden-item"><strong>Limitación:</strong> Bloqueo regional.</li>
+                </ul>
+            </div>
         </div>
-        
-        <div class="v-card big-con" onclick="revealNextItem('cons-list')">
-            <div class="v-header">
-                <i class="fas fa-thumbs-down"></i> CONTRAS
-                </div>
-            <ul id="cons-list" class="progressive-list">
-                <li class="hidden-item">Privacidad comprometida.</li>
-                <li class="hidden-item">Dependencia de Internet.</li>
-                <li class="hidden-item">Bloqueo regional.</li>
-            </ul>
+    </section>
+
+    <section id="resolucion" class="slide">
+        <div class="resolution-header">
+            <h2 class="slide-title">La Resolución</h2>
+            <p class="resolution-text">"Google busca reemplazar el botón 'Inicio' de Windows usando <strong>Alt +
+                    Espacio</strong>."</p>
         </div>
-    </div>
+        <div class="verdict-grid three-cols">
+            <div class="v-card big-pro" onclick="revealNextItem('workspace-list')">
+                <div class="v-header"><i class="fab fa-google-drive"></i> Workspace</div>
+                <div id="workspace-list" class="progressive-box">
+                    <p class="hidden-item">Si dependes de Drive...</p>
+                    <p class="hidden-item">Es un cambio radical positivo.</p>
+                    <p class="hidden-item">Elimina fricción Nube-PC.</p>
+                </div>
+            </div>
+            <div class="v-card big-con" onclick="revealNextItem('privacy-list')">
+                <div class="v-header"><i class="fas fa-user-shield"></i> Privacidad</div>
+                <div id="privacy-list" class="progressive-box">
+                    <p class="hidden-item">Seamos cautelosos.</p>
+                    <p class="hidden-item">El algoritmo "lee" tu disco.</p>
+                    <p class="hidden-item">Indexación total.</p>
+                </div>
+            </div>
+            <div class="v-card big-rec" onclick="revealNextItem('rec-list')">
+                <div class="v-header"><i class="fas fa-star"></i> Recomendación</div>
+                <div id="rec-list" class="progressive-box">
+                    <p class="hidden-item">Vale la pena probarla (VPN).</p>
+                    <p class="hidden-item">Es muy rápida.</p>
+                    <p class="hidden-item">Aún es Beta (faltan funciones).</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="final-badge">Recomendado para usuarios de Workspace</div>
-</section>
-
-  <section id="final" class="slide final-slide">
+    <section id="final" class="slide final-slide">
         <div class="final-container">
             <button id="boom-btn" class="boom-button" onclick="goBoom()">
                 <i class="fas fa-check-circle"></i> FINALIZAR
             </button>
-
-            <div id="thank-you-msg" class="hidden-msg">
-                <h1 class="giant-text">¡GRACIAS COMPAÑEROS POR SU ATENCION!</h1>
-             
+            <div id="thank-you-msg" class="hidden-msg" style="display: none;">
+                <h1 class="giant-text">¡GRACIAS!</h1>
+                <p style="font-size: 2rem; margin-top: 20px;">¿Preguntas?</p>
             </div>
         </div>
         <audio id="applause-sound" src="https://actions.google.com/sounds/v1/crowds/applause.ogg"></audio>
@@ -186,6 +227,3 @@
 </body>
 
 </html>
-
-
-
